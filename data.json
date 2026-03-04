@@ -1,0 +1,48 @@
+{
+  "generated_at": "2026-03-02T00:00:00Z",
+  "sections": {
+    "conflict": {
+      "phase": "AGUARDANDO DADOS",
+      "alert_level": "ALTO",
+      "summary": "Dados ainda não carregados. O GitHub Action irá buscar informações atualizadas em breve (próxima execução em 00h, 06h, 12h ou 18h UTC).",
+      "key_events": ["Aguardando fetch automático..."],
+      "us_israel_actions": ["Aguardando dados..."],
+      "iran_actions": ["Aguardando dados..."],
+      "regional_actors": [],
+      "updated_at": "--:-- --/--/----"
+    },
+    "markets": {
+      "brent_price": "--.-",
+      "brent_change": "--",
+      "wti_price": "--.-",
+      "wti_change": "--",
+      "futures": [
+        {"index": "S&P 500", "change": "--"},
+        {"index": "Dow Jones", "change": "--"},
+        {"index": "Nasdaq", "change": "--"}
+      ],
+      "safe_havens": ["Aguardando dados..."],
+      "analysis": "Dados serão carregados automaticamente.",
+      "updated_at": "--:-- --/--/----"
+    },
+    "airspace": {
+      "airspace": [],
+      "suspended_airlines": [],
+      "updated_at": "--:-- --/--/----"
+    },
+    "maritime": {
+      "hormuz_drop": "--%",
+      "alert_level": "ALTO",
+      "incidents": ["Aguardando dados..."],
+      "shipping_companies": [],
+      "routes": [
+        {"route": "Estreito de Ormuz", "status": "-- carregando"},
+        {"route": "Canal de Suez", "status": "-- carregando"},
+        {"route": "Cabo da Boa Esperança", "status": "-- carregando"}
+      ],
+      "analysis": "Dados serão carregados automaticamente.",
+      "updated_at": "--:-- --/--/----"
+    }
+  },
+  "errors": {}
+}
