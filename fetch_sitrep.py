@@ -89,12 +89,15 @@ def call_claude(system: str, user: str, retries: int = 3) -> dict:
         "anthropic-version": "2023-06-01",
     }
 
-    for attempt in range(retries):
+   for attempt in range(retries):
         try:
             req = urllib.request.Request(API_URL, data=payload, headers=headers)
-            with urllib.request.urlopen(req, timeout=120) as resp:
-                raw = json.loads(resp.read())
-
+            try:
+                with urllib.request.urlopen(req, timeout=120) as resp:
+                    raw = json.loads(resp.read())
+            except urllib.error.HTTPError as http_err:
+                body = http_err.read().decode()
+                raise Exception(f"HTTP {http_err.code}: {body}")
             text = "".join(
                 b.get("text", "") for b in raw.get("content", []) if b.get("type") == "text"
             )
