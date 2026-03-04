@@ -80,7 +80,6 @@ def call_claude(system: str, user: str, retries: int = 3) -> dict:
 
         "max_tokens": 1000,
         "system": system,
-        "tools": [{"type": "web_search_20250305", "name": "web_search"}],
         "messages": [{"role": "user", "content": user}],
     }).encode()
 
